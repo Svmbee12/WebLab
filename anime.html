@@ -1,204 +1,454 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anime Landing — OtakuHub</title>
-  <link rel="stylesheet" href="anime.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime - OtakuHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="otaku.css">
 </head>
-<body class="site-theme-dark">
+<body class="bg-dark text-light">
 
-  <nav>
-    <img src="LOGO.png" class="logo_img" alt="OtakuHub logo">
-    <ul>
-      <li><a href="otaku.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="anime.html" class="active">Anime</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="otaku.html">
+        <img src="LOGO.png" alt="Logo" width="40" class="me-2"> OtakuHub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="otaku.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="anime.html">Anime</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main class="search-landing landing">
-<!-- Homepage landing sections: 5 items per section -->
-<section class="landing-section trending" id="trending">
-  <a href="/search/anime/trending" class="title link">
-    <h3>Trending now</h3>
-    <div class="expand">View All</div>
-  </a>
-  <div class="results">
-    <div class="media-card">
-      <a href="https://anilist.co/anime/169969/Mushoku-no-Eiyuu-Betsu-ni-Skill-nanka-Ira-Nakattan-Daga/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169969-SqCjoqYT4A6Z.jpg" alt="Mushoku no Eiyuu">
-      </a>
-      <a href="https://anilist.co/anime/169969/Mushoku-no-Eiyuu-Betsu-ni-Skill-nanka-Ira-Nakattan-Daga/" class="title">Mushoku no Eiyuu: Betsu ni Skill nanka Ira Nakattan Daga</a>
+
+
+
+
+
+
+
+
+
+
+
+  <main class="container py-5 mt-5">
+
+    <!-- Trending Section -->
+    <section class="mb-5">
+      <h2 class="text-warning mb-4">🔥 Trending</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-light h-100 shadow-sm">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153800-8SpzdHOaZCoU.jpg" class="card-img-top" alt="One Punch Man S3">
+            <div class="card-body text-center">
+              <h5 class="card-title">One Punch Man S3</h5>
+              <a href="https://anilist.co/anime/153800/One-Punch-Man-3/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-light h-100 shadow-sm">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg" class="card-img-top" alt="Boku no Hero Academia FINAL SEASON">
+            <div class="card-body text-center">
+              <h5 class="card-title">Boku no Hero Academia FINAL SEASON</h5>
+              <a href="https://anilist.co/anime/182896/Boku-no-Hero-Academia-FINAL-SEASON/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-light h-100 shadow-sm">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162890-vDRlo1KuRM6W.jpg"  class="card-img-top" alt="3-nen Z-gumi Ginpachi-sensei">
+            <div class="card-body text-center">
+              <h5 class="card-title">3-nen Z-gumi Ginpachi-sensei</h5>
+              <a href="https://anilist.co/anime/1535/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-light h-100 shadow-sm">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178025-cWJKEsZynkil.jpg" class="card-img-top" alt="Ao no Orchestra Season 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Ao no Orchestra Season 2</h5>
+              <a href="https://anilist.co/anime/178025/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-light h-100 shadow-sm">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177937-Tzgg6rAdhCoH.jpg" class="card-img-top" alt="SPY×FAMILY Season 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">SPY×FAMILY Season 3</h5>
+              <a href="https://anilist.co/anime/177937/SPYFAMILY-Season-3/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-light h-100 shadow-sm">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129195-9BT4wE1QTLj2.jpg" class="card-img-top" alt="Tomodachi no Imouto ga Ore ni dake Uzai">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tomodachi no Imouto ga Ore ni dake Uzai</h5>
+              <a href="https://anilist.co/anime/129195/Tomodachi-no-Imouto-ga-Ore-ni-dake-Uzai/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- SANDA -->
+<div class="col-md-3 col-sm-6">
+  <div class="card bg-secondary text-light h-100 shadow-sm">
+    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179302-gWWAh5BfQyl4.jpg" class="card-img-top" alt="SANDA">
+    <div class="card-body text-center">
+      <h5 class="card-title">SANDA</h5>
+      <a href="https://anilist.co/anime/179302/SANDA/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="mb-5">
+  <h2 class="text-warning mb-4">🔥 Popular This Season</h2>
+  <div class="row g-4">
+
+    <!-- One Punch Man 3 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153800-8SpzdHOaZCoU.jpg" class="card-img-top" alt="One Punch Man 3">
+        <div class="card-body text-center">
+          <h5 class="card-title">One Punch Man 3</h5>
+          <a href="https://anilist.co/anime/153800/One-Punch-Man-3/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/178025/Gachiakuta/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178025-cWJKEsZynkil.jpg" alt="Gachiakuta">
-      </a>
-      <a href="https://anilist.co/anime/178025/Gachiakuta/" class="title">Gachiakuta</a>
+    <!-- SPY×FAMILY Season 3 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177937-Tzgg6rAdhCoH.jpg" class="card-img-top" alt="SPY×FAMILY Season 3">
+        <div class="card-body text-center">
+          <h5 class="card-title">SPY×FAMILY Season 3</h5>
+          <a href="https://anilist.co/anime/177937/SPYFAMILY-Season-3/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/21/ONE-PIECE/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg" alt="ONE PIECE">
-      </a>
-      <a href="https://anilist.co/anime/21/ONE-PIECE/" class="title">ONE PIECE</a>
+    <!-- Boku no Hero Academia FINAL SEASON -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg" class="card-img-top" alt="Boku no Hero Academia FINAL SEASON">
+        <div class="card-body text-center">
+          <h5 class="card-title">Boku no Hero Academia FINAL SEASON</h5>
+          <a href="https://anilist.co/anime/182896/Boku-no-Hero-Academia-FINAL-SEASON/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/178754/Kaijuu-8gou-2nd-Season/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178754-Dgrub8xgC03M.jpg" alt="Kaijuu 8-gou 2nd Season">
-      </a>
-      <a href="https://anilist.co/anime/178754/Kaijuu-8gou-2nd-Season/" class="title">Kaijuu 8-gou 2nd Season</a>
+    <!-- Jigokuraku 2nd Season -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166613-YzuAjRNJKo1K.png" class="card-img-top" alt="Jigokuraku 2nd Season">
+        <div class="card-body text-center">
+          <h5 class="card-title">Jigokuraku 2nd Season</h5>
+          <a href="https://anilist.co/anime/166613/Jigokuraku-2nd-Season/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/181444/Kaoru-Hana-wa-Rin-to-Saku/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181444-Ut9DDUZdfHwg.jpg" alt="Kaoru Hana wa Rin to Saku">
-      </a>
-      <a href="https://anilist.co/anime/181444/Kaoru-Hana-wa-Rin-to-Saku/" class="title">Kaoru Hana wa Rin to Saku</a>
+    <!-- Saigo ni Hitotsu dake Onegai Shite mo Yoroshii Deshou ka -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181447-aCmaQmtdwuU5.jpg"  class="card-img-top" alt="Saigo ni Hitotsu dake Onegai Shite mo Yoroshii Deshou ka">
+        <div class="card-body text-center">
+          <h5 class="card-title">Saigo ni Hitotsu dake Onegai Shite mo Yoroshii Deshou ka</h5>
+          <a href="https://anilist.co/anime/166617/Fatestrange-Fake/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
+
+    <!-- Fumetsu no Anata e Season 3 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162669-kCweQfkr6bIu.jpg" class="card-img-top" alt="Fumetsu no Anata e Season 3">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fumetsu no Anata e Season 3</h5>
+          <a href="https://anilist.co/anime/162669/Fumetsu-no-Anata-e-Season-3/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tomodachi no Imouto ga Ore ni dake Uzai -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129195-9BT4wE1QTLj2.jpg" class="card-img-top" alt="Tomodachi no Imouto ga Ore ni dake Uzai">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tomodachi no Imouto ga Ore ni dake Uzai</h5>
+          <a href="https://anilist.co/anime/129195/Tomodachi-no-Imouto-ga-Ore-ni-dake-Uzai/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tondemo Skill de Isekai Hourou Meshi 2 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170577-ocYSFAcry7ty.jpg" class="card-img-top" alt="Tondemo Skill de Isekai Hourou Meshi 2">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tondemo Skill de Isekai Hourou Meshi 2</h5>
+          <a href="https://anilist.co/anime/182587/Oshi-no-Ko-3rd-Season/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section class="landing-section season" id="this-season">
-  <a href="/search/anime/this-season" class="title link">
-    <h3>Popular this season</h3>
-    <div class="expand">View All</div>
-  </a>
-  <div class="results">
-    <div class="media-card">
-      <a href="https://anilist.co/anime/153800/One-Punch-Man-3/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153800-8SpzdHOaZCoU.jpg" alt="One Punch Man 3">
-      </a>
-      <a href="https://anilist.co/anime/153800/One-Punch-Man-3/" class="title">One Punch Man 3</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="mb-5">
+  <h2 class="text-warning mb-4">⏳ Upcoming Next Season</h2>
+  <div class="row g-4">
+
+    <!-- Jujutsu Kaisen: Shimetsu Kaiyuu -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-NU2G6VHIHivv.png" class="card-img-top" alt="Jujutsu Kaisen: Shimetsu Kaiyuu">
+        <div class="card-body text-center">
+          <h5 class="card-title">Jujutsu Kaisen: Shimetsu Kaiyuu</h5>
+          <a href="https://anilist.co/anime/172463/Jujutsu-Kaisen-Shimetsu-Kaiyuu/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/177937/SPYFAMILY-Season-3/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177937-Tzgg6rAdhCoH.jpg" alt="SPY×FAMILY Season 3">
-      </a>
-      <a href="https://anilist.co/anime/177937/SPYFAMILY-Season-3/" class="title">SPY×FAMILY Season 3</a>
+    <!-- Sousou no Frieren 2nd Season -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182255-butzrqd4I0aC.jpg" class="card-img-top" alt="Sousou no Frieren 2nd Season">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sousou no Frieren 2nd Season</h5>
+          <a href="https://anilist.co/anime/182255/Sousou-no-Frieren-2nd-Season/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/182896/Boku-no-Hero-Academia-FINAL-SEASON/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg" alt="Boku no Hero Academia FINAL SEASON">
-      </a>
-      <a href="https://anilist.co/anime/182896/Boku-no-Hero-Academia-FINAL-SEASON/" class="title">Boku no Hero Academia FINAL SEASON</a>
+    <!-- Jigokuraku 2nd Season -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166613-YzuAjRNJKo1K.png" class="card-img-top" alt="Jigokuraku 2nd Season">
+        <div class="card-body text-center">
+          <h5 class="card-title">Jigokuraku 2nd Season</h5>
+          <a href="https://anilist.co/anime/166613/Jigokuraku-2nd-Season/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/162669/Fumetsu-no-Anata-e-Season-3/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162669-kCweQfkr6bIu.jpg" alt="Fumetsu no Anata e Season 3">
-      </a>
-      <a href="https://anilist.co/anime/162669/Fumetsu-no-Anata-e-Season-3/" class="title">Fumetsu no Anata e Season 3</a>
+    <!-- Oshi no Ko 3rd Season -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182587-DDcS1xe5FfiK.jpg" class="card-img-top" alt="Oshi no Ko 3rd Season">
+        <div class="card-body text-center">
+          <h5 class="card-title">Oshi no Ko 3rd Season</h5>
+          <a href="https://anilist.co/anime/182587/Oshi-no-Ko-3rd-Season/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/129195/Tomodachi-no-Imouto-ga-Ore-ni-dake-Uzai/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129195-9BT4wE1QTLj2.jpg" alt="Tomodachi no Imouto ga Ore ni dake Uzai">
-      </a>
-      <a href="https://anilist.co/anime/129195/Tomodachi-no-Imouto-ga-Ore-ni-dake-Uzai/" class="title">Tomodachi no Imouto ga Ore ni dake Uzai</a>
+    <!-- Enen no Shouboutai: San no Shou Part 2 -->
+<div class="col-md-3 col-sm-6">
+  <div class="card bg-secondary text-light h-100 shadow-sm">
+    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179062-pbzYE1miZq61.png" class="card-img-top" alt="Enen no Shouboutai: San no Shou Part 2">
+    <div class="card-body text-center">
+      <h5 class="card-title">Enen no Shouboutai: San no Shou Part 2</h5>
+      <a href="https://anilist.co/anime/21492/Enen-no-Shouboutai-San-no-Shou-Part-2/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
     </div>
+  </div>
+</div>
+
+    <!-- Fate/strange Fake -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166617-34fpC9y47tTx.png" class="card-img-top" alt="Fate/strange Fake">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fate/strange Fake</h5>
+          <a href="https://anilist.co/anime/166617/Fatestrange-Fake/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tensei Shitara Slime Datta Ken - Soukai no Namida-hen -->
+<div class="col-md-3 col-sm-6">
+  <div class="card bg-secondary text-light h-100 shadow-sm">
+    <img  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182206-V8XxHcPDh7kx.jpg" class="card-img-top" alt="Tensei Shitara Slime Datta Ken - Soukai no Namida-hen">
+    <div class="card-body text-center">
+      <h5 class="card-title">Tensei Shitara Slime Datta Ken - Soukai no Namida-hen</h5>
+      <a href="https://anilist.co/anime/21215/Tensei-Shitara-Slime-Datta-Ken-Soukai-no-Namida-hen/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+    </div>
+  </div>
+</div>
+
+    <!-- Mato Seihei no Slave 2 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176276-WxqTMKWOzVVo.jpg" class="card-img-top" alt="Mato Seihei no Slave 2">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mato Seihei no Slave 2</h5>
+          <a href="https://anilist.co/anime/182587/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section class="landing-section nextSeason" id="next-season">
-  <a href="/search/anime/next-season" class="title link">
-    <h3>Upcoming next season</h3>
-    <div class="expand">View All</div>
-  </a>
-  <div class="results">
-    <div class="media-card">
-      <a href="https://anilist.co/anime/172463/Jujutsu-Kaisen-Shimetsu-Kaiyuu/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-NU2G6VHIHivv.png" alt="Jujutsu Kaisen: Shimetsu Kaiyuu">
-      </a>
-      <a href="https://anilist.co/anime/172463/Jujutsu-Kaisen-Shimetsu-Kaiyuu/" class="title">Jujutsu Kaisen: Shimetsu Kaiyuu</a>
+
+
+
+
+
+
+    <section class="mb-5">
+  <h2 class="text-warning mb-4">🔥 All Time Popular</h2>
+  <div class="row g-4">
+
+    <!-- Sousou no Frieren -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182255-butzrqd4I0aC.jpg" class="card-img-top" alt="Sousou no Frieren">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sousou no Frieren</h5>
+          <a href="https://anilist.co/anime/182255/Sousou-no-Frieren-2nd-Season/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/182255/Sousou-no-Frieren-2nd-Season/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182255-butzrqd4I0aC.jpg" alt="Sousou no Frieren 2nd Season">
-      </a>
-      <a href="https://anilist.co/anime/182255/Sousou-no-Frieren-2nd-Season/" class="title">Sousou no Frieren 2nd Season</a>
+    <!-- Fullmetal Alchemist: Brotherhood -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5114-nSWCgQlmOMtj.jpg" class="card-img-top" alt="Fullmetal Alchemist: Brotherhood">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fullmetal Alchemist: Brotherhood</h5>
+          <a href="https://anilist.co/anime/5114/Fullmetal-Alchemist-Brotherhood/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/166613/Jigokuraku-2nd-Season/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166613-YzuAjRNJKo1K.png" alt="Jigokuraku 2nd Season">
-      </a>
-      <a href="https://anilist.co/anime/166613/Jigokuraku-2nd-Season/" class="title">Jigokuraku 2nd Season</a>
+    <!-- One Punch Man -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153800-8SpzdHOaZCoU.jpg" class="card-img-top" alt="One Punch Man">
+        <div class="card-body text-center">
+          <h5 class="card-title">One Punch Man</h5>
+          <a href="https://anilist.co/anime/153800/One-Punch-Man-3/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/182587/Oshi-no-Ko-3rd-Season/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182587-DDcS1xe5FfiK.jpg" alt="Oshi no Ko 3rd Season">
-      </a>
-      <a href="https://anilist.co/anime/182587/Oshi-no-Ko-3rd-Season/" class="title">Oshi no Ko 3rd Season</a>
+    <!-- Kimetsu no Yaiba -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-WBsBl0ClmgYL.jpg" class="card-img-top" alt="Kimetsu no Yaiba">
+        <div class="card-body text-center">
+          <h5 class="card-title">Kimetsu no Yaiba</h5>
+          <a href="https://anilist.co/anime/101922/Kimetsu-no-Yaiba/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="media-card">
-      <a href="https://anilist.co/anime/166617/Fatestrange-Fake/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166617-34fpC9y47tTx.png" alt="Fate/strange Fake">
-      </a>
-      <a href="https://anilist.co/anime/166617/Fatestrange-Fake/" class="title">Fate/strange Fake</a>
+    <!-- DEATH NOTE -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg" class="card-img-top" alt="DEATH NOTE">
+        <div class="card-body text-center">
+          <h5 class="card-title">DEATH NOTE</h5>
+          <a href="https://anilist.co/anime/1535/DEATH-NOTE/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
     </div>
+
+    <!-- Jujutsu Kaisen -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-LHBAeoZDIsnF.jpg" class="card-img-top" alt="Jujutsu Kaisen">
+        <div class="card-body text-center">
+          <h5 class="card-title">Jujutsu Kaisen</h5>
+          <a href="https://anilist.co/anime/113415/Jujutsu-Kaisen/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boku no Hero Academia -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21459-nYh85uj2Fuwr.jpg" class="card-img-top" alt="Boku no Hero Academia">
+        <div class="card-body text-center">
+          <h5 class="card-title">Boku no Hero Academia</h5>
+          <a href="https://anilist.co/anime/21459/Boku-no-Hero-Academia/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HUNTER×HUNTER (2011) -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card bg-secondary text-light h-100 shadow-sm">
+        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png"  class="card-img-top" alt="HUNTER×HUNTER (2011)">
+        <div class="card-body text-center">
+          <h5 class="card-title">HUNTER×HUNTER (2011)</h5>
+          <a href="https://anilist.co/anime/11061/Hunter-x-Hunter-2011/" target="_blank" class="btn btn-outline-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
+    
+
   </div>
 </section>
 
-<section class="landing-section popular" id="popular">
-  <a href="/search/anime/popular" class="title link">
-    <h3>All time popular</h3>
-    <div class="expand">View All</div>
-  </a>
-  <div class="results">
-    <div class="media-card">
-      <a href="https://anilist.co/anime/16498/Shingeki-no-Kyojin/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg" alt="Shingeki no Kyojin">
-      </a>
-      <a href="https://anilist.co/anime/16498/Shingeki-no-Kyojin/" class="title">Shingeki no Kyojin</a>
-    </div>
-
-    <div class="media-card">
-      <a href="https://anilist.co/anime/101922/Kimetsu-no-Yaiba/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-WBsBl0ClmgYL.jpg" alt="Kimetsu no Yaiba">
-      </a>
-      <a href="https://anilist.co/anime/101922/Kimetsu-no-Yaiba/" class="title">Kimetsu no Yaiba</a>
-    </div>
-
-    <div class="media-card">
-      <a href="https://anilist.co/anime/1535/DEATH-NOTE/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg" alt="DEATH NOTE">
-      </a>
-      <a href="https://anilist.co/anime/1535/DEATH-NOTE/" class="title">DEATH NOTE</a>
-    </div>
-
-    <div class="media-card">
-      <a href="https://anilist.co/anime/113415/Jujutsu-Kaisen/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-LHBAeoZDIsnF.jpg" alt="Jujutsu Kaisen">
-      </a>
-      <a href="https://anilist.co/anime/113415/Jujutsu-Kaisen/" class="title">Jujutsu Kaisen</a>
-    </div>
-
-    <div class="media-card">
-      <a href="https://anilist.co/anime/21459/Boku-no-Hero-Academia/" class="cover">
-        <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21459-nYh85uj2Fuwr.jpg" alt="Boku no Hero Academia">
-      </a>
-      <a href="https://anilist.co/anime/21459/Boku-no-Hero-Academia/" class="title">Boku no Hero Academia</a>
-    </div>
-  </div>
-</section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© OtakuHub</p>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-black text-center py-3 mt-5">
+    <p class="m-0">© 2025 OtakuHub | Designed with ❤️ by Anime Fans</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
