@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<img src="bear.png" id="bear" style="width: 80px; height: 80px; position: 'absolute'; left: 0; top: 0;">
+
+<script>
+
+var im = document.getElementById('bear');  
+
+window.addEventListener('load', () =>{
+
+    im.style.position = 'absolute';
+
+    im.style.left = 0;
+
+    im.style.top = 0;
+
+});  
+
+document.onkeydown = function(e){
+
+ switch(e.key) {
+
+     case "a":
+
+            im.style.left = parseInt(im.style.left) - 50 + "px"; 
+
+            break;
+
+     case "d":
+
+            im.style.left = parseInt(im.style.left) + 50 + "px";
+
+            break; 
+
+     case "w":
+
+            im.style.top = parseInt(im.style.top) - 50 + "px";
+
+            break;
+
+     case "s":
+
+            im.style.top = parseInt(im.style.top) + 50 + "px";
+
+            break;             
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
